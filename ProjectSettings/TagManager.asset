@@ -8,6 +8,8 @@ TagManager:
   - Enemy
   - Energy
   - Explosion
+  - EnemyBullet
+  - Usb
   layers:
   - Default
   - TransparentFX
@@ -68,6 +70,9 @@ TagManager:
     locked: 0
   - name: Enemy
     uniqueID: 39813591
+    locked: 0
+  - name: Blood
+    uniqueID: 3541234229
     locked: 0
   - name: HpBar
     uniqueID: 3317077093

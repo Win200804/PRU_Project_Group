@@ -5,7 +5,7 @@ public class PlayerBullet : MonoBehaviour
     [SerializeField] private float moveSpeed = 25f;
     [SerializeField] private float timeDestroy = 0.5f;
     [SerializeField] private float damage = 10f;
-
+    [SerializeField] GameObject bloodPrefabs;
     void Start()
     {
         Destroy(gameObject, timeDestroy);
@@ -29,6 +29,8 @@ public class PlayerBullet : MonoBehaviour
             if (enemy != null)
             {
                 enemy.TakeDamage(damage);
+                GameObject blood = Instantiate(bloodPrefabs, collision.transform.position, Quaternion.identity);
+                Destroy(blood, 0.5f); // Destroy the blood effect after 0.5 seconds
             }
             Destroy(gameObject); // Destroy the bullet on hit
 
