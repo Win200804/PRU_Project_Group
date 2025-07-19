@@ -10,6 +10,7 @@ public class Player : MonoBehaviour
     protected float currentHp;
     [SerializeField] private Image hpBar;
 
+    [SerializeField] private GameManager gameManager;
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -26,20 +27,28 @@ public class Player : MonoBehaviour
     void Update()
     {
         MovePlayer();
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (gameManager != null)
+            {
+                gameManager.PauseGameMenu();
+            }
+        }
     }
 
     void MovePlayer()
     {
         Vector2 playerInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         rb.linearVelocity = playerInput.normalized * moveSpeed;
-        if(playerInput.x < 0)
+        if (playerInput.x < 0)
         {
             spriteRenderer.flipX = true;
-        }else if (playerInput.x > 0)
+        }
+        else if (playerInput.x > 0)
         {
             spriteRenderer.flipX = false;
         }
-        if(playerInput != Vector2.zero)
+        if (playerInput != Vector2.zero)
         {
             animator.SetBool("isRun", true);
         }
@@ -62,7 +71,8 @@ public class Player : MonoBehaviour
 
     private void Die()
     {
-        Destroy(gameObject);
+        // Destroy(gameObject);
+        gameManager.GameOverMenu();
     }
     protected virtual void UpdateHpBar()
     {
@@ -74,7 +84,7 @@ public class Player : MonoBehaviour
 
     public void Heal(float healValue)
     {
-        if(currentHp < maxHp)
+        if (currentHp < maxHp)
         {
             currentHp += healValue;
             currentHp = Mathf.Min(currentHp, maxHp);
