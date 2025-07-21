@@ -177,8 +177,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0451a474d2e2c4f40b540dae1319ed79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMoveSpeed: 2
-  maxHp: 50
+  enemyMoveSpeed: 4
+  maxHp: 70
   hpBar: {fileID: 3250058378661370873}
   enterDamage: 10
   stayDamage: 1

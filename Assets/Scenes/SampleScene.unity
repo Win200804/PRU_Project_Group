@@ -17592,7 +17592,7 @@ MonoBehaviour:
   enemyMoveSpeed: 1
   maxHp: 300
   hpBar: {fileID: 1054966192}
-  enterDamage: 5
+  enterDamage: 10
   stayDamage: 1
   bulletPrefabs: {fileID: 7205635261088561489, guid: 0f6ea5df3620ffc4a92ebd538be8ba82, type: 3}
   bulletSpawnPoint: {fileID: 2059625678}
@@ -17600,7 +17600,7 @@ MonoBehaviour:
   bulletSpecialSpeed: 10
   hpValue: 50
   miniEnemyPrefab: {fileID: 5122012065435170545, guid: 18bf527b7914a694887d432e4a021dae, type: 3}
-  skillCooldown: 2
+  skillCooldown: 1.5
   usbPrefabs: {fileID: 4894422354498319330, guid: bb8020e3b75341f41b1950570a54f43b, type: 3}
 --- !u!95 &1772002665
 Animator:
