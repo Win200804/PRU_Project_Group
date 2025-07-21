@@ -277,7 +277,7 @@ Transform:
   m_GameObject: {fileID: 29658430}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.98, y: -8.07, z: 0}
+  m_LocalPosition: {x: 51.2, y: -28.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4217,7 +4217,7 @@ Transform:
   m_GameObject: {fileID: 145533385}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 10, y: -28.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4460,7 +4460,7 @@ Transform:
   m_GameObject: {fileID: 274270190}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0.32, y: 0.62, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7659,7 +7659,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0.32, y: 0.62, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8395,7 +8395,7 @@ Transform:
   m_GameObject: {fileID: 955576354}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.86, y: 6.98, z: 0}
+  m_LocalPosition: {x: 28.5, y: -4.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13346,11 +13346,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0af8b72d2098b5b46b471adfc2eacaa6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemies:
-  - {fileID: 3471606256754397655, guid: fe03800c9a2cb1345ba01b8233a4c9ef, type: 3}
-  - {fileID: 2906976633314380627, guid: ed9e185d4636a3941a38818fe4253f23, type: 3}
-  - {fileID: 8029050426991769717, guid: 399a8723ca552d34a82d7516708e25a4, type: 3}
-  - {fileID: 7956683649118944907, guid: 4579b7b420c208042a8bcec0c02885f8, type: 3}
   spawnPoints:
   - {fileID: 1442571285}
   - {fileID: 955576355}
@@ -13358,6 +13353,30 @@ MonoBehaviour:
   - {fileID: 1962521327}
   - {fileID: 145533386}
   spawnInterval: 1
+  timeBetweenWaves: 10
+  waves:
+  - enemies:
+    - prefab: {fileID: 3471606256754397655, guid: fe03800c9a2cb1345ba01b8233a4c9ef, type: 3}
+      count: 10
+  - enemies:
+    - prefab: {fileID: 3471606256754397655, guid: fe03800c9a2cb1345ba01b8233a4c9ef, type: 3}
+      count: 11
+    - prefab: {fileID: 7956683649118944907, guid: 4579b7b420c208042a8bcec0c02885f8, type: 3}
+      count: 3
+  - enemies:
+    - prefab: {fileID: 3471606256754397655, guid: fe03800c9a2cb1345ba01b8233a4c9ef, type: 3}
+      count: 12
+    - prefab: {fileID: 7956683649118944907, guid: 4579b7b420c208042a8bcec0c02885f8, type: 3}
+      count: 3
+    - prefab: {fileID: 8029050426991769717, guid: 399a8723ca552d34a82d7516708e25a4, type: 3}
+      count: 3
+  - enemies:
+    - prefab: {fileID: 3471606256754397655, guid: fe03800c9a2cb1345ba01b8233a4c9ef, type: 3}
+      count: 20
+    - prefab: {fileID: 7956683649118944907, guid: 4579b7b420c208042a8bcec0c02885f8, type: 3}
+      count: 5
+    - prefab: {fileID: 2906976633314380627, guid: ed9e185d4636a3941a38818fe4253f23, type: 3}
+      count: 3
 --- !u!4 &1110406354
 Transform:
   m_ObjectHideFlags: 0
@@ -13903,7 +13922,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1341288219
 RectTransform:
   m_ObjectHideFlags: 0
@@ -15248,7 +15267,7 @@ Transform:
   m_GameObject: {fileID: 1642414121}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.32, y: 0.62, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -15344,7 +15363,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1, y: -1399}
+  m_AnchoredPosition: {x: -38, y: -1526}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1735465018
@@ -16735,7 +16754,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1, y: -1051}
+  m_AnchoredPosition: {x: -38, y: -1178}
   m_SizeDelta: {x: 1060, y: 524.53}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1908442290
@@ -16758,7 +16777,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: cai nay sua vao hehehe
+  m_text: The world is safe for now, let's continue saving the world.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -16862,7 +16881,7 @@ Transform:
   m_GameObject: {fileID: 1962521326}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.89, y: -7.95, z: 0}
+  m_LocalPosition: {x: -13.7, y: -9.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
